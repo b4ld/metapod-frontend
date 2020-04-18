@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 1%;
+    background-color:#ebf3ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* ### STRUCTURE TABLES ###*/
+#table-out {
+    font-family: arial, sans-serif;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#table-out-th {
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* ### SPECIFIC TABLES ###*/
+#metatable {
+    font-family: arial, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#metavalue {
+    text-align: right;
+
 }
+
+#metatr {
+    font-family: arial, sans-serif;
+    padding: 10px;
+}
+
+#metakey {
+    text-transform: capitalize;
+
+}
+
+#sysvalue {
+    text-align: right;
+
+}
+
+#systr {
+    font-family: arial, sans-serif;
+    padding: 10px;
+}
+
+#syskey {
+    text-transform: capitalize;
+
+}
+
+
+
+
+
+/* 
+###### PROVIDER LABEL ###########
+*/
+
+#provider-label {
+    text-align: left;
+    width: 200px;
+    height: 50px; 
+    font-size: medium;
+}
+
+#headerprovider * {
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+/* ###### VENDOR LABEL ###########*/
+#vendorlabel {
+    text-align: center;
+}
+
+/* ###### CONTAINERS ###########*/
+.truncate-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: pink;
+}
+
+
+/* ###### STRUCTURE ###########*/
+#headerrow {
+    height: 50px;
+    
+}
+
+#bodyrow-01 {
+    height: 50px;
+}
+/* #### METAdata SYS #### */
+#bodyrow-02 {
+    margin-bottom: 25px;
+}
+#bodyrow-02 table {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    background: #d7e7fc;
+    border-top: 2px solid #444444;
+}
+/* #### METAdata SYS #### */
+
+/* #### Docker #### */
+#bodyrow-03 {
+    margin-bottom: 25px;
+}
+#bodyrow-03 table {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  background: #d7e7fc;
+  border-top: 2px solid #444444;
+  height: 10px;       /* Just for the demo          */
+  overflow-y: auto;    /* Trigger vertical scroll    */
+  overflow-x: hidden;  /* Hide the horizontal scroll */
+  
+}
+/* #### Docker #### */
+
+#bodyrow-04 {
+    border: solid black 1px;
+}
+
+
+#footerrow {
+    border: solid black 1px;
+}
+
+
+
+
+
+
